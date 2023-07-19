@@ -1,16 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" src="assets/css/style.css">
+
+    <!-- Font Awesome and Google Fonts -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
+
+    <!-- Stylesheet-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
     <title>Rock, Paper, Scissors, Lizard, Spock</title>
 </head>
+
 <body>
-    
+    <header>
+        <h1 class="heading">Rock, Paper, Scissors, Lizard, Spock</h1>
+    </header>
 
+    <img src="assets/images/rpsls.png" alt="rpsls">
+    <h2 class="encourage"> May the odds be ever in your favour: </h2>
 
+    <!-- Scoreboard -->
+    <div class="scoreboard">
+        <span id="player-score">
+            <h3>Player Score: 0</h3>
+        </span>
+        <span id="computer-score">
+            <h3> Computer Score: 0 </h3>
+        </span>
+    </div>
+
+    <div class="game-container">
+
+        <!-- Choices to pick from in the game -->
+        <div class="choices">
+            <button aria-label="Rock" data-type="rock" class="choice">
+                <i class="fas fa-hand-back-fist"></i>
+            </button>
+            <button aria-label="Paper" data-type="paper" class="choice">
+                <i class="fas fa-hand"></i>
+            </button>
+            <button aria-label="Scissors" data-type="scissors" class="choice">
+                <i class="fas fa-hand-scissors"></i>
+            </button>
+            <button aria-label="Lizard" data-type="lizard" class="choice">
+                <i class="fas fa-hand-lizard"></i>
+            </button>
+            <button aria-label="Spock" data-type="spock" class="choice">
+                <i class="fas fa-hand-spock"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Result -->
+    <div class="result">
+        <p id="round-result"></p>
+        <p id="final-result"></p>
+    </div>
+
+    <!-- Game Rules -->
+
+    <div class="game-information">
+        <h2>Game Rules:</h2>
+        <p>Scissors cuts Paper</p>
+        <p>Paper covers Rock</p>
+        <p>Rock crushes Lizard</p>
+        <p>Lizard posions Spock</p>
+        <p>Spock smashes Scissors</p>
+        <p>Scissors decapitates Lizard</p>
+        <p>Lizard eats Paper</p>
+        <p>Paper disproves Spock</p>
+        <p>Spock vaporises Rock</p>
+        <p>And how it always has been... Rock crushes Scissors</p>
+    </div>
+    <footer>
+        <div>
+            <ul class="social-networks">
+                <li><a href="https://www.facebook.com" target="_blank" rel="noopener"><i
+                            class="fab fa-facebook"></i></a></li>
+                <li><a href="https://www.twitter.com" target="_blank" rel="noopener"><i
+                            class="fab fa-twitter-square"></i></a></li>
+                <li><a href="https://www.youtube.com" target="_blank" rel="noopener"><i
+                            class="fab fa-youtube-square"></i></a></li>
+                <li><a href="https://www.instagram.com" target="_blank" rel="noopener"><i
+                            class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+
+    </footer>
+
+    <!-- Javascript Script-->
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
