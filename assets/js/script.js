@@ -1,4 +1,7 @@
-// Add event listener to every button
+/**
+ * Add event listener to every button
+ */
+
 const buttons = document.getElementsByClassName("choice");
 
 for (let button of buttons) {
@@ -12,20 +15,32 @@ for (let button of buttons) {
 let playerScore = 0;
 let computerScore = 0;
 
-// Declare the display elements
+/**
+ * Declare the display elements
+ */
+
 const playerScoreDisplay = document.getElementById("player-score");
 const computerScoreDisplay = document.getElementById("computer-score");
 const roundResultDisplay = document.getElementById("round-result");
 const finalResultDisplay = document.getElementById("final-result");
 
-// Declare the choices
+/**
+ * Declare the choices
+ */
+
 function playRound(playerSelection) {
     const choices = ["rock", "paper", "scissors", "lizard", "spock"];
 
-    // Generate computer's selection randomly
+    /**
+     * Generate computer's selection randomly
+     */
+
     const computerSelection = choices[Math.floor(Math.random() * choices.length)];
 
-    // Check the outcome of the round
+    /**
+     * Check the outcome of the round
+     */
+
     if (playerSelection === computerSelection) {
         roundResultDisplay.textContent = "It's a tie!";
     } else if (
@@ -42,7 +57,10 @@ function playRound(playerSelection) {
         computerScore++;
     }
 
-    // Update the score displays
+    /**
+     * Update the score displays
+     */
+
     playerScoreDisplay.textContent = "Player: " + playerScore;
     computerScoreDisplay.textContent = "Computer: " + computerScore;
 }
@@ -61,6 +79,7 @@ function checkGameEnd() {
 }
 
 // Disable all choice buttons
+
 function disableButtons() {
     for (let button of buttons) {
         button.disabled = true;
@@ -68,6 +87,7 @@ function disableButtons() {
 }
 
 // Reset the game
+
 function resetGame() {
     playerScore = 0;
     computerScore = 0;
@@ -77,10 +97,8 @@ function resetGame() {
     finalResultDisplay.textContent = "";
 
     // Enable all choice buttons
+
     for (let button of buttons) {
         button.disabled = false;
     }
 }
-
-
-

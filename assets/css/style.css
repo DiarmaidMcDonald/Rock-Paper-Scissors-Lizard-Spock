@@ -9,14 +9,16 @@ body {
     margin: 0;
 }
 
+/* Styling for the heading */
 
-/* Heading */
 .heading {
     margin-top: 30px;
     text-align: center;
     letter-spacing: 4px;
     font-size: 2.5rem;
 }
+
+/* Styling for the encouraging message */
 
 .encourage {
     margin-top: 30px;
@@ -25,8 +27,7 @@ body {
     font-size: 1.5rem;
 }
 
-
-/* Rock, Paper, Scissors, Lizard, Spock Picture */
+/* Styling for the Rock, Paper, Scissors, Lizard, Spock Picture */
 
 #rpsls {
     height: auto;
@@ -37,11 +38,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
-
-/* The choices for the game */
+/* Styling for the game container */
 
 .game-container {
     display: flex;
@@ -50,6 +49,7 @@ body {
     margin-top: 50px;
 }
 
+/* Styling for the choices in the game */
 
 .choices {
     display: flex;
@@ -57,21 +57,28 @@ body {
     margin-bottom: 100px;
 }
 
+/* Styling for the choice of buttons */
 
 .choice {
     font-size: 16px;
     padding: 10px 20px;
-    cursor: pointer;
     padding-top: 10px;
     border-radius: 50%;
     background-color: white;
-    border: 10px solid;
+    border: 5px solid;
     width: 100px;
     height: 100px;
     font-size: 3.2rem;
     margin: 0 30px;
-    transition: all 0.5s;
 }
+
+.choice:active,
+.choice:hover {
+    background-color: white;
+    color: darkred;
+}
+
+/* Display the data-type attribute of the choice buttons */
 
 .choice::after {
     content: attr(data-type);
@@ -81,39 +88,44 @@ body {
     left: -0.5em;
 }
 
-/* Scoreboard */
+/* Styling for the scoreboard */
 
 .scoreboard {
     display: flex;
     justify-content: space-around;
     margin-bottom: 20px;
+    font-size: large;
 }
+
+/* Styling for the player score display */
 
 .player-score {
     margin-top: 20px;
     font-size: 1rem;
 }
 
+/* Styling for the computer score display */
+
 .computer-score {
     margin-top: 20px;
     font-size: 1rem;
 }
 
-/* Results */
+/* Styling for the results display */
 
 .result {
     font-size: 18px;
 }
 
+/* Styling for paragraphs */
 
 p {
-    margin: 5px;
+    margin: 20px;
 }
 
-/* Game Rules */
+/* Styling for the game information */
 
 .game-information {
-    position: absolute;
     width: 100%;
     left: 0;
     box-sizing: border-box;
@@ -124,8 +136,8 @@ p {
     background-color: darkred;
 }
 
+/* Styling for the footer */
 
-/* Footer */
 footer {
     display: flex;
     justify-content: center;
@@ -133,30 +145,34 @@ footer {
     background-color: darkred;
     color: white;
     padding: 10px;
+    flex-wrap: wrap;
 }
+
+/* Styling for the social network links */
 
 .social-networks {
     list-style: none;
-    padding: 0;
     display: flex;
+    margin: 0;
 }
+
+/* Styling for each social network link */
 
 .social-networks li {
     margin: 0 10px;
 }
+
+/* Styling for the social network icons */
 
 .social-networks i {
     font-size: 24px;
     color: white;
 }
 
-
 /* Media Queries */
-
 /* Media query for (max-width: 1200px) */
+
 @media (max-width: 1200px) {
-
-
     body {
         font-size: 14px;
     }
@@ -185,11 +201,15 @@ footer {
         height: 80px;
         font-size: 2.4rem;
     }
+
+    .game-container {
+        margin-bottom: 50px;
+    }
 }
 
 /* Media query for (max-width: 950px) */
-@media (max-width: 950px) {
 
+@media (max-width: 950px) {
     body {
         font-size: 12px;
     }
@@ -219,11 +239,14 @@ footer {
         font-size: 2.4rem;
     }
 
+    .game-container {
+        margin-bottom: 50px;
+    }
 }
 
 /* Media query for max-width 414px */
-@media (max-width: 414px) {
 
+@media (max-width: 414px) {
     body {
         font-size: 14px;
     }
@@ -250,5 +273,9 @@ footer {
         width: 80px;
         height: 80px;
         font-size: 2.4rem;
+    }
+
+    .game-container {
+        margin-bottom: 50px;
     }
 }

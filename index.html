@@ -25,71 +25,68 @@
     <img src="assets/images/rpsls.png" alt="rpsls">
     <h2 class="encourage"> May the odds be ever in your favour: </h2>
 
-    <!-- Scoreboard -->
-    <div class="scoreboard">
-        <span id="player-score">
-            <h3>Player Score: 0</h3>
-        </span>
-        <span id="computer-score">
-            <h3> Computer Score: 0 </h3>
-        </span>
-    </div>
-
-    <div class="game-container">
-
-        <!-- Choices to pick from in the game -->
-        <div class="choices">
-            <button aria-label="Rock" data-type="rock" class="choice">
-                <i class="fas fa-hand-back-fist"></i>
-            </button>
-            <button aria-label="Paper" data-type="paper" class="choice">
-                <i class="fas fa-hand"></i>
-            </button>
-            <button aria-label="Scissors" data-type="scissors" class="choice">
-                <i class="fas fa-hand-scissors"></i>
-            </button>
-            <button aria-label="Lizard" data-type="lizard" class="choice">
-                <i class="fas fa-hand-lizard"></i>
-            </button>
-            <button aria-label="Spock" data-type="spock" class="choice">
-                <i class="fas fa-hand-spock"></i>
-            </button>
+    <section>
+        <!-- Result -->
+        <div class="result">
+            <p id="round-result"></p>
+            <p id="final-result"></p>
         </div>
-    </div>
 
-    <!-- Result -->
-    <div class="result">
-        <p id="round-result"></p>
-        <p id="final-result"></p>
-    </div>
+        <!-- Scoreboard -->
+        <div class="scoreboard">
+            <h3>
+                <span id="player-score">
+                    Player Score: 0
+                </span>
+            </h3>
+            <h3>
+                <span id="computer-score">
+                    Computer Score: 0
+                </span>
+            </h3>
+        </div>
+    </section>
 
-    <!-- Game Rules -->
+    <section>
+        <div class="game-container">
 
-    <div class="game-information">
-        <h2>Game Rules:</h2>
-        <p>Scissors cuts Paper</p>
-        <p>Paper covers Rock</p>
-        <p>Rock crushes Lizard</p>
-        <p>Lizard posions Spock</p>
-        <p>Spock smashes Scissors</p>
-        <p>Scissors decapitates Lizard</p>
-        <p>Lizard eats Paper</p>
-        <p>Paper disproves Spock</p>
-        <p>Spock vaporises Rock</p>
-        <p>And how it always has been... Rock crushes Scissors</p>
-    </div>
+            <!-- Choices to pick from in the game -->
+
+            <div class="choices">
+                <button aria-label="Rock" data-type="Rock" class="choice">
+                    <i class="fas fa-hand-back-fist"></i>
+                </button>
+                <button aria-label="Paper" data-type="Paper" class="choice">
+                    <i class="fas fa-hand"></i>
+                </button>
+                <button aria-label="Scissors" data-type="Scissors" class="choice">
+                    <i class="fas fa-hand-scissors"></i>
+                </button>
+                <button aria-label="Lizard" data-type="Lizard" class="choice">
+                    <i class="fas fa-hand-lizard"></i>
+                </button>
+                <button aria-label="Spock" data-type="Spock" class="choice">
+                    <i class="fas fa-hand-spock"></i>
+                </button>
+            </div>
+        </div>
+    </section>
     <footer>
-        <div>
-            <ul class="social-networks">
-                <li><a href="https://www.facebook.com" target="_blank" rel="noopener"><i
-                            class="fab fa-facebook"></i></a></li>
-                <li><a href="https://www.twitter.com" target="_blank" rel="noopener"><i
-                            class="fab fa-twitter-square"></i></a></li>
-                <li><a href="https://www.youtube.com" target="_blank" rel="noopener"><i
-                            class="fab fa-youtube-square"></i></a></li>
-                <li><a href="https://www.instagram.com" target="_blank" rel="noopener"><i
-                            class="fab fa-instagram"></i></a></li>
-            </ul>
+        <!-- Game Rules -->
+
+
+        <div class="game-information">
+            <h2>Game Rules:</h2>
+            <p>Scissors cuts Paper</p>
+            <p>Paper covers Rock</p>
+            <p>Rock crushes Lizard</p>
+            <p>Lizard poisons Spock</p>
+            <p>Spock smashes Scissors</p>
+            <p>Scissors decapitates Lizard</p>
+            <p>Lizard eats Paper</p>
+            <p>Paper disproves Spock</p>
+            <p>Spock vaporises Rock</p>
+            <p>And how it always has been... Rock crushes Scissors</p>
         </div>
 
     </footer>
