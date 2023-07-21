@@ -53,7 +53,7 @@ function playRound(playerSelection) {
         roundResultDisplay.textContent = "Yaaaay!! You win this round!";
         playerScore++;
     } else {
-        roundResultDisplay.textContent = "HA HA! You lose this round!";
+        roundResultDisplay.textContent = "Oops! You lose this round!";
         computerScore++;
     }
 
@@ -66,8 +66,8 @@ function playRound(playerSelection) {
 }
 
 function checkGameEnd() {
-    if (playerScore === 6 || computerScore === 6) {
-        const finalResult = playerScore === 6 ? "You won the game!" : "Computer won the game!";
+    if (playerScore === 10 || computerScore === 10) {
+        const finalResult = playerScore === 10 ? "You won the game!" : "Computer won the game!";
         finalResultDisplay.textContent = finalResult;
         disableButtons();
 
@@ -78,7 +78,9 @@ function checkGameEnd() {
     }
 }
 
-// Disable all choice buttons
+/**
+ * Disable all choice buttons
+ */
 
 function disableButtons() {
     for (let button of buttons) {
@@ -86,7 +88,9 @@ function disableButtons() {
     }
 }
 
-// Reset the game
+/**
+ * Reset the game
+ */
 
 function resetGame() {
     playerScore = 0;

@@ -49,6 +49,7 @@ body {
     margin-top: 50px;
 }
 
+
 /* Styling for the choices in the game */
 
 .choices {
@@ -65,17 +66,11 @@ body {
     padding-top: 10px;
     border-radius: 50%;
     background-color: white;
-    border: 5px solid;
+    border: 10px solid;
     width: 100px;
     height: 100px;
     font-size: 3.2rem;
     margin: 0 30px;
-}
-
-.choice:active,
-.choice:hover {
-    background-color: white;
-    color: darkred;
 }
 
 /* Display the data-type attribute of the choice buttons */
@@ -86,6 +81,12 @@ body {
     color: #3a3a3a;
     position: relative;
     left: -0.5em;
+}
+
+.choice:active,
+.choice:hover {
+    background-color: darkred;
+    color: white;
 }
 
 /* Styling for the scoreboard */
@@ -134,39 +135,6 @@ p {
     text-align: center;
     color: white;
     background-color: darkred;
-}
-
-/* Styling for the footer */
-
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: darkred;
-    color: white;
-    padding: 10px;
-    flex-wrap: wrap;
-}
-
-/* Styling for the social network links */
-
-.social-networks {
-    list-style: none;
-    display: flex;
-    margin: 0;
-}
-
-/* Styling for each social network link */
-
-.social-networks li {
-    margin: 0 10px;
-}
-
-/* Styling for the social network icons */
-
-.social-networks i {
-    font-size: 24px;
-    color: white;
 }
 
 /* Media Queries */

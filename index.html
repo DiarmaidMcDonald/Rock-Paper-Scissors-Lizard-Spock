@@ -51,29 +51,29 @@
         <div class="game-container">
 
             <!-- Choices to pick from in the game -->
-
             <div class="choices">
-                <button aria-label="Rock" data-type="Rock" class="choice">
-                    <i class="fas fa-hand-back-fist"></i>
+                <button aria-label="Rock" data-type="Rock" class="choice choice-green" onclick="playRound('rock')">
+                    <i class="far fa-hand-rock"></i>
                 </button>
-                <button aria-label="Paper" data-type="Paper" class="choice">
-                    <i class="fas fa-hand"></i>
+                <button aria-label="Paper" data-type="Paper" class="choice choice-red" onclick="playRound('paper')">
+                    <i class="far fa-hand-paper"></i>
                 </button>
-                <button aria-label="Scissors" data-type="Scissors" class="choice">
-                    <i class="fas fa-hand-scissors"></i>
+                <button aria-label="Scissors" data-type="Scissors" class="choice choice-blue"
+                    onclick="playRound('scissors')">
+                    <i class="far fa-hand-scissors"></i>
                 </button>
-                <button aria-label="Lizard" data-type="Lizard" class="choice">
-                    <i class="fas fa-hand-lizard"></i>
+                <button aria-label="Lizard" data-type="Lizard" class="choice choice-orange"
+                    onclick="playRound('lizard')">
+                    <i class="far fa-hand-lizard"></i>
                 </button>
-                <button aria-label="Spock" data-type="Spock" class="choice">
-                    <i class="fas fa-hand-spock"></i>
+                <button aria-label="Spock" data-type="Spock" class="choice choice-pink" onclick="playRound('spock')">
+                    <i class="far fa-hand-spock"></i>
                 </button>
             </div>
         </div>
     </section>
     <footer>
         <!-- Game Rules -->
-
 
         <div class="game-information">
             <h2>Game Rules:</h2>
@@ -88,7 +88,6 @@
             <p>Spock vaporises Rock</p>
             <p>And how it always has been... Rock crushes Scissors</p>
         </div>
-
     </footer>
 
     <!-- Javascript Script-->
