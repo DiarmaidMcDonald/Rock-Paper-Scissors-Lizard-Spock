@@ -16,36 +16,36 @@ Please follow the link below to the Webpage -
 
 As shown above, the title of the page is Rock, Paper, Sciossors, Lizard, Spock. It also has a photo underneath showing which hand signs to use for each choice. 
 
-### Scoreboard
+### Scoreboard and Choices to Choose From
 
 ![Scoreboard](assets/images/scoreboard.png)
 
 Here is the first display of the scoreboard - before the game has begun.
 
-![PlayerWin](assets/images/player-win.png)
+![YouWin](assets/images/you-win.png)
 
-Should the player win a round you will get a congraulations message.
+Should the player win a round you will get a congraulations message. The player has chosen "Scissors".
 
-![ComputerWin](assets/images/computer-win.png)
+![TheyWin](assets/images/they-win.png)
 
-Should the player lose a round, and the computer wins you will get a message informing you that you have lost. 
+Should the player lose a round, and the computer wins you will get a message informing you that you have lost, along with the option they selected. The player here chose "Spock".
 
-![tie](assets/images/tie.png)
+![Draw](assets/images/draw.png)
 
-You will also be informed should you and the computer select the same choice.
+You will also be informed should you and the computer select the same choice. As soon here both the player and the computer both selected the "Scissors" option.
 
 Once the game is complete you will be also shown an additional message confirming who won the game before the game resets.
 The Javascript choose a random option for the computer.
 The result and score are clearly displayed above the options.
 
-### Pick an icon, any icon.
+### Pick an icon, any icon
 
 ![GameOptions](assets/images/game-options.png)
 
-The icons above are the options to choose from. Once hovered over, the icons will cahnge colour allowing for the user to be 100% certain of their choice. 
+The icons above are the options to choose from. Once hovered over, the icons will change colour allowing for the user to be 100% certain of their choice. 
 
 ### Game Rules
 
 ![GameRules](assets/images/game-rules.png)
 
-Here you will find the rules of the game. May the odds be ever in your favour!! 
+Here you will find the rules of the game. May the odds be ever in your favour!!
