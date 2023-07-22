@@ -28,7 +28,7 @@ const computerScoreDisplay = document.getElementById("computer-score");
 const roundResultDisplay = document.getElementById("round-result");
 const finalResultDisplay = document.getElementById("final-result");
 
-/* 
+/*
 Declare the choices
 */
 
@@ -36,6 +36,10 @@ function playRound(playerSelection) {
     if (!finalResultDisplay.textContent) { // Check if the game has ended
         const choices = ["rock", "paper", "scissors", "lizard", "spock"];
         const computerSelection = choices[Math.floor(Math.random() * choices.length)];
+
+        // Display computer's selection
+    const computerSelectionDisplay = document.getElementById("computer-selection");
+    computerSelectionDisplay.textContent = "Computer picked: " + computerSelection;
 
         if (playerSelection === computerSelection) {
             roundResultDisplay.textContent = "It's a tie!";
