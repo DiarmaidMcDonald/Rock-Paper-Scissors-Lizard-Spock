@@ -5,68 +5,68 @@
 const buttons = document.getElementsByClassName("choice");
 
 for (let button of buttons) {
-    button.addEventListener("click", function () {
-        let playerSelection = this.getAttribute("data-type");
+    button.removeEventListener("click", handleClick); // Remove any existing event listener
+    button.addEventListener("click", handleClick); // Add the updated event listener
+}
+
+function handleClick() {
+    if (!finalResultDisplay.textContent) { // Check if the game has ended
+        const playerSelection = this.getAttribute("data-type");
         playRound(playerSelection);
-        checkGameEnd();
-    });
+    }
 }
 
 let playerScore = 0;
 let computerScore = 0;
 
-/**
- * Declare the display elements
- */
+/*
+Declare the display elements
+*/
 
 const playerScoreDisplay = document.getElementById("player-score");
 const computerScoreDisplay = document.getElementById("computer-score");
 const roundResultDisplay = document.getElementById("round-result");
 const finalResultDisplay = document.getElementById("final-result");
 
-/**
- * Declare the choices
- */
+/* 
+Declare the choices
+*/
 
 function playRound(playerSelection) {
-    const choices = ["rock", "paper", "scissors", "lizard", "spock"];
+    if (!finalResultDisplay.textContent) { // Check if the game has ended
+        const choices = ["rock", "paper", "scissors", "lizard", "spock"];
+        const computerSelection = choices[Math.floor(Math.random() * choices.length)];
 
-    /**
-     * Generate computer's selection randomly
-     */
+        if (playerSelection === computerSelection) {
+            roundResultDisplay.textContent = "It's a tie!";
+            console.log("REGISTERING TIED ROUND");
+        } else if (
+            (playerSelection === "rock" && (computerSelection === "scissors" || computerSelection === "lizard")) ||
+            (playerSelection === "paper" && (computerSelection === "rock" || computerSelection === "spock")) ||
+            (playerSelection === "scissors" && (computerSelection === "paper" || computerSelection === "lizard")) ||
+            (playerSelection === "lizard" && (computerSelection === "paper" || computerSelection === "spock")) ||
+            (playerSelection === "spock" && (computerSelection === "rock" || computerSelection === "scissors"))
+        ) {
+            roundResultDisplay.textContent = "Yaaaay!! You win this round!";
+            playerScore++;
+            console.log("REGISTERING WON ROUND");
+        } else {
+            roundResultDisplay.textContent = "Oops! You lose this round!";
+            computerScore++;
+            console.log("REGISTERING LOST ROUND");
+        }
 
-    const computerSelection = choices[Math.floor(Math.random() * choices.length)];
-
-    /**
-     * Check the outcome of the round
-     */
-
-    if (playerSelection === computerSelection) {
-        roundResultDisplay.textContent = "It's a tie!";
-    } else if (
-        (playerSelection === "rock" && (computerSelection === "scissors" || computerSelection === "lizard")) ||
-        (playerSelection === "paper" && (computerSelection === "rock" || computerSelection === "spock")) ||
-        (playerSelection === "scissors" && (computerSelection === "paper" || computerSelection === "lizard")) ||
-        (playerSelection === "lizard" && (computerSelection === "paper" || computerSelection === "spock")) ||
-        (playerSelection === "spock" && (computerSelection === "rock" || computerSelection === "scissors"))
-    ) {
-        roundResultDisplay.textContent = "Yaaaay!! You win this round!";
-        playerScore++;
-    } else {
-        roundResultDisplay.textContent = "Oops! You lose this round!";
-        computerScore++;
+        playerScoreDisplay.textContent = playerScore;
+        computerScoreDisplay.textContent = computerScore;
+        checkGameEnd();
     }
-
-    /**
-     * Update the score displays
-     */
-
-    playerScoreDisplay.textContent = "Player: " + playerScore;
-    computerScoreDisplay.textContent = "Computer: " + computerScore;
 }
 
+
+
 function checkGameEnd() {
-    if (playerScore === 10 || computerScore === 10) {
+    if (playerScore >= 10 || computerScore >= 10) {
+        console.log("GAME SHOULD BE OVER NOW!!!");
         const finalResult = playerScore === 10 ? "You won the game!" : "Computer won the game!";
         finalResultDisplay.textContent = finalResult;
         disableButtons();
@@ -74,13 +74,14 @@ function checkGameEnd() {
         // Reset the game after 2 seconds
         setTimeout(() => {
             resetGame();
+            console.log("RESET GAME NOW!!!");
         }, 2000);
     }
 }
 
 /**
- * Disable all choice buttons
- */
+* Disable all choice buttons
+*/
 
 function disableButtons() {
     for (let button of buttons) {
@@ -88,15 +89,11 @@ function disableButtons() {
     }
 }
 
-/**
- * Reset the game
- */
-
 function resetGame() {
     playerScore = 0;
     computerScore = 0;
-    playerScoreDisplay.textContent = "Player: 0";
-    computerScoreDisplay.textContent = "Computer: 0";
+    playerScoreDisplay.textContent = "0";
+    computerScoreDisplay.textContent = "0";
     roundResultDisplay.textContent = "";
     finalResultDisplay.textContent = "";
 
