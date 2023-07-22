@@ -19,17 +19,32 @@ As shown above, the title of the page is Rock, Paper, Sciossors, Lizard, Spock. 
 ### Scoreboard
 
 ![Scoreboard](assets/images/scoreboard.png)
+
+Here is the first display of the scoreboard - before the game has begun.
+
 ![PlayerWin](assets/images/player-win.png)
+
+Should the player win a round you will get a congraulations message.
+
 ![ComputerWin](assets/images/computer-win.png)
+
+Should the player lose a round, and the computer wins you will get a message informing you that you have lost. 
+
 ![tie](assets/images/tie.png)
 
-Above you will find the scoreboard displayed with comments should you win, lose, or draw each round. Once the game is complete you will be also shown an additional message confirming who won the game before the game resets.
-The Javascript choose a random option for the computer. 
+You will also be informed should you and the computer select the same choice.
+
+Once the game is complete you will be also shown an additional message confirming who won the game before the game resets.
+The Javascript choose a random option for the computer.
 The result and score are clearly displayed above the options.
+
+### Pick an icon, any icon.
 
 ![GameOptions](assets/images/game-options.png)
 
 The icons above are the options to choose from. Once hovered over, the icons will cahnge colour allowing for the user to be 100% certain of their choice. 
+
+### Game Rules
 
 ![GameRules](assets/images/game-rules.png)
 

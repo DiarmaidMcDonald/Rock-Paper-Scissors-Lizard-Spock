@@ -38,8 +38,8 @@ function playRound(playerSelection) {
         const computerSelection = choices[Math.floor(Math.random() * choices.length)];
 
         // Display computer's selection
-    const computerSelectionDisplay = document.getElementById("computer-selection");
-    computerSelectionDisplay.textContent = "Computer picked: " + computerSelection;
+        const computerSelectionDisplay = document.getElementById("computer-selection");
+        computerSelectionDisplay.textContent = "Computer picked: " + computerSelection;
 
         if (playerSelection === computerSelection) {
             roundResultDisplay.textContent = "It's a tie!";
@@ -59,9 +59,8 @@ function playRound(playerSelection) {
             computerScore++;
             console.log("REGISTERING LOST ROUND");
         }
-
-        playerScoreDisplay.textContent = playerScore;
-        computerScoreDisplay.textContent = computerScore;
+        playerScoreDisplay.textContent = "Player Score: " + playerScore;
+        computerScoreDisplay.textContent = "Computer Score: " + computerScore;
         checkGameEnd();
     }
 }
@@ -96,8 +95,8 @@ function disableButtons() {
 function resetGame() {
     playerScore = 0;
     computerScore = 0;
-    playerScoreDisplay.textContent = "0";
-    computerScoreDisplay.textContent = "0";
+    playerScoreDisplay.textContent = "Player Score: " + playerScore; // Add the label "Player Score"
+    computerScoreDisplay.textContent = "Computer Score: " + computerScore; // Add the label "Computer Score"
     roundResultDisplay.textContent = "";
     finalResultDisplay.textContent = "";
 
