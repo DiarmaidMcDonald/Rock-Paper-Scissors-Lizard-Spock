@@ -2,7 +2,7 @@
 
 Rock, Paper, Scissors, Lizard, Spock is a game for you to enjoy. The idea for the game came from the famous show 'The Big Bang Theory'. This particular designed game will allow you to play against the computer. It is suitable for all ages. The player must reach 10 points in order to beat the computer and be crowned the Rock, Paper, Scissors, Lizard, Spock champion! But should you lose, not to worry. The game will reset after a couple of seconds and allow you to try again! May the odds be ever in your favour!! 
 
-![fullpage](../Rock-Paper-Scissors-Lizard-Spock/assets/images/fullpage.png)
+![fullpage](assets/images/fullpage.png)
 
 Please follow the link below to the Webpage -
 
@@ -18,19 +18,19 @@ As shown above, the title of the page is Rock, Paper, Sciossors, Lizard, Spock. 
 
 ### Scoreboard and Choices to Choose From
 
-![Scoreboard](../Rock-Paper-Scissors-Lizard-Spock/assets/images/scoreboard.png)
+![Scoreboard](assets/images/scoreboard.png)
 
 Here is the first display of the scoreboard - before the game has begun.
 
-![YouWin](../Rock-Paper-Scissors-Lizard-Spock/assets/images/you-win.png)
+![YouWin](assets/images/you-win.png)
 
 Should the player win a round you will get a congraulations message. The player has chosen "Scissors".
 
-![TheyWin](../Rock-Paper-Scissors-Lizard-Spock/assets/images/they-win.png)
+![TheyWin](assets/images/they-win.png)
 
 Should the player lose a round, and the computer wins you will get a message informing you that you have lost, along with the option they selected. The player here chose "Spock".
 
-![Draw](../Rock-Paper-Scissors-Lizard-Spock/assets/images/draw.png)
+![Draw](assets/images/draw.png)
 
 You will also be informed should you and the computer select the same choice. As soon here both the player and the computer both selected the "Scissors" option.
 
@@ -40,13 +40,13 @@ The result and score are clearly displayed above the options.
 
 ### Pick an icon, any icon
 
-![GameOptions](../Rock-Paper-Scissors-Lizard-Spock/assets/images/game-options.png)
+![GameOptions](assets/images/game-options.png)
 
 The icons above are the options to choose from. Once hovered over, the icons will change colour allowing for the user to be 100% certain of their choice. 
 
 ### Game Rules
 
-![GameRules](../Rock-Paper-Scissors-Lizard-Spock/assets/images/game-rules.png)
+![GameRules](assets/images/game-rules.png)
 
 Here you will find the rules of the game. May the odds be ever in your favour!!
 
@@ -54,7 +54,7 @@ Here you will find the rules of the game. May the odds be ever in your favour!!
 
 ### Lighthouse
 
-![Lighthouse](../Rock-Paper-Scissors-Lizard-Spock/assets/images/lighthouse.png)
+![Lighthouse](assets/images/lighthouse.png)
 
 The game was tested on Chrome and the results were always correct.
 The project is responsive and suits all different screen sizes.
